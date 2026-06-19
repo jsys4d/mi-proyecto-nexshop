@@ -1,52 +1,42 @@
-\# NexShop Group S.A. — Base de Datos
+# 🛒 NexShop Group S.A. — Base de Datos Relacional
 
+Base de datos relacional completa para NexShop Group S.A., empresa de distribución y venta al por menor con tienda online y tres tiendas físicas.
 
+> Proyecto desarrollado en el módulo de Bases de Datos — CodeArts Solutions
 
-\*\*Alumno:\*\* Juan Fernandez Frances
+## 🏗️ Stack Tecnológico
 
-\*\*Modulo:\*\* Bases de Datos — CodeArts
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-Relacional-orange)
 
-\*\*Nivel:\*\* Intermedio-Avanzado
+## 🗂️ Estructura de la base de datos
 
+| Tabla | Descripción |
+|---|---|
+| `sede` | Tiendas físicas y almacén central (Valencia, Madrid, Barcelona) |
+| `empleado` | 47 empleados asignados a sedes |
+| `producto` | +2.000 referencias con jerarquía categoría/subcategoría |
+| `cliente` | Clientes registrados y anónimos |
+| `pedido_online` | Pedidos web con múltiples envíos parciales |
+| `ticket_venta` | Ventas presenciales en tienda física |
+| `stock_ubicacion` | Stock por producto y sede |
+| `puntos_movimiento` | Histórico del programa de fidelización |
 
+## 🚀 Importación
 
-\## Descripcion del proyecto
-
-
-
-Base de datos relacional completa para NexShop Group S.A., empresa de distribucion y venta al por menor con tienda online (nexshop.es) y tres tiendas fisicas en Valencia, Madrid y Barcelona.
-
-
-
-\## Instrucciones de importacion
-
-
-
+```sql
 SOURCE sql/schema.sql;
-
 SOURCE sql/datos.sql;
-
 SOURCE consultas/consultas.sql;
+```
 
+## 📊 Características
 
+- Modelo relacional normalizado (3FN)
+- Gestión de stock multi-sede
+- Sistema de fidelización con puntos
+- Pedidos online con envíos parciales
+- Ventas presenciales y online integradas
 
-\## Tablas principales
-
-
-
-sede - Tiendas fisicas y almacen central
-
-empleado - 47 empleados asignados a sedes
-
-producto - +2.000 referencias con jerarquia categoria/subcategoria
-
-cliente - Clientes registrados y anonimos
-
-pedido\_online - Pedidos web con multiples envios parciales
-
-ticket\_venta - Ventas presenciales en tienda fisica
-
-stock\_ubicacion - Stock por producto y sede
-
-puntos\_movimiento - Historico del programa de fidelizacion
-
+---
+*Desarrollado durante prácticas FCT en CodeArts Solutions — CESUR Zaragoza 2024-2025*
