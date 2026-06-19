@@ -39,4 +39,4 @@ SOURCE consultas/consultas.sql;
 - Ventas presenciales y online integradas
 
 ---
-*Desarrollado durante prácticas FCT en CodeArts Solutions — CESUR Zaragoza 2024-2025*
+*Desarrollado durante prácticas FCT en CodeArts Solutions — CESUR Zaragoza Junio-2026*
